@@ -1,8 +1,8 @@
 /* Font used on header */
 @font-face {
     font-family: 'Norse';
-    src: url('Norse-Bold.woff2') format('woff2'),
-        url('Norse-Bold.woff') format('woff');
+    src: url('fonts/Norse-Bold.woff2') format('woff2'),
+        url('fonts/Norse-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -12,4 +12,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    
+}
+
+/* Layout */
+
+.container {
+    display: flex;
+}
+
+header {
+    width: 45vh;
+    background-image: url(images/leaves-bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.header-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'Norse', sans-serif;
+    font-size: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 0;
+}
+
+main {
+    width: 55vh;
 }
